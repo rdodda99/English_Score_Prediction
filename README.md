@@ -1,5 +1,4 @@
-# Student Performance Prediction
-
+# English Score Prediction
 This project aims to predict the math score of students based on various factors, such as previous grades, family background, study habits, etc. The project uses a machine learning model trained on a dataset of student records.
 
 ## Features
