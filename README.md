@@ -3,13 +3,12 @@ This project aims to predict the math score of students based on various factors
 
 ## Features
 
-- End-to-end ML pipeline that includes data preprocessing, model training, evaluation, and deployment
-- Dockerization of the project to ensure reproducibility and portability
-- Continuous integration and delivery using GitHub Actions
-- Deployment to AWS Elastic Beanstalk for scalable and reliable hosting
-- Flask web application that provides a user interface for interacting with the model
+- End-to-End ML Pipeline: The project encompasses an end-to-end machine learning pipeline, including data preprocessing, model training, evaluation, and deployment stages, ensuring a streamlined and efficient workflow.
+- Dockerization: The entire project is containerized using Docker, promoting reproducibility and portability across different environments and systems.
+- Continuous Integration and Delivery: GitHub Actions are integrated for continuous integration and delivery, enabling automated testing, building, and deployment processes.
+- Cloud Deployment: The English score prediction model is deployed on AWS Elastic Beanstalk, a scalable and reliable hosting platform, ensuring high availability and performance.
+- Flask Web Application: A user-friendly Flask web application is provided, allowing users to interact with the model through a intuitive interface, facilitating easy access and utilization of the prediction capabilities.
 
-Link to access the deployed application - [StudentPerformancePrediction](http://studentperformance-env.eba-gjnxjvpq.eu-north-1.elasticbeanstalk.com/)
 
 ## Requirements
 
@@ -26,4 +25,4 @@ Link to access the deployed application - [StudentPerformancePrediction](http://
 
 ## Usage
 
-The web app allows you to enter the values of the features that affect the student performance, such as gender, writing score, etc. After submitting the form, the app will display the predicted math score.
+The web application provides a user-friendly interface where you can input various student attributes that influence their academic performance. These attributes include gender, writing score, and other relevant factors. Upon submitting the form, the application will leverage the trained machine learning model to generate a prediction of the student's English score based on the provided information. This prediction can assist educators, administrators, and students in understanding the potential English performance and identifying areas that may require additional support or intervention.
