@@ -12,7 +12,7 @@ This project aims to predict the math score of students based on various factors
 
 ## Requirements
 
-- Python 3.8 or higher
+- Python 3.8 or high
 - Docker
 - AWS account and credentials for deploying 
 
