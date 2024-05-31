@@ -3,11 +3,11 @@ This project aims to predict the math score of students based on various factors
 
 ## Features
 
-- *End-to-End ML Pipeline:* The project encompasses an end-to-end machine learning pipeline, including data preprocessing, model training, evaluation, and deployment stages, ensuring a streamlined and efficient workflow.
-- *Dockerization:* The entire project is containerized using Docker, promoting reproducibility and portability across different environments and systems.
-- *Continuous Integration and Delivery:* GitHub Actions are integrated for continuous integration and delivery, enabling automated testing, building, and deployment processes.
-- *Cloud Deployment:* The English score prediction model is deployed on AWS Elastic Beanstalk, a scalable and reliable hosting platform, ensuring high availability and performance.
-- *Flask Web Application:* A user-friendly Flask web application is provided, allowing users to interact with the model through a intuitive interface, facilitating easy access and utilization of the prediction capabilities.
+- **End-to-End ML Pipeline:** The project encompasses an end-to-end machine learning pipeline, including data preprocessing, model training, evaluation, and deployment stages, ensuring a streamlined and efficient workflow.
+- **Dockerization:** The entire project is containerized using Docker, promoting reproducibility and portability across different environments and systems.
+- **Continuous Integration and Delivery:** GitHub Actions are integrated for continuous integration and delivery, enabling automated testing, building, and deployment processes.
+- **Cloud Deployment:** The English score prediction model is deployed on AWS Elastic Beanstalk, a scalable and reliable hosting platform, ensuring high availability and performance.
+- **Flask Web Application:** A user-friendly Flask web application is provided, allowing users to interact with the model through a intuitive interface, facilitating easy access and utilization of the prediction capabilities.
 
 
 ## Requirements
