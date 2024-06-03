@@ -1,167 +1,258 @@
-<html>
-    <head>
-        <!-- Add a link to an external CSS file -->
-        <style>
-            /* Use a custom font for the whole page */
-            @import url('https://fonts.googleapis.com/css?family=Roboto');
-    
-            /* Set the background color and font of the body */
-            body {
-                font-family: 'Roboto', sans-serif;
-                background: rgb(227,214,220);
-                background: radial-gradient(circle, rgba(227,214,220,1) 0%, rgba(229,246,231,1) 41%, rgba(188,212,241,1) 100%);
-            }
-    
-            /* Center the login div and give it some padding and border */
-            .login {
-                width: 600px;
-                margin: 50px auto;
-                padding: 20px;
-                border: 1px solid #ccc;
-                background-color: white;
-            }
-    
-            /* Style the h1 elements with a different color and font size */
-            h1 {
-                font-size: 36px;
-                text-align: center;
-            }
-    
-            /* Style the form elements with some margin, padding, and border */
-            .form-control {
-                display: block;
-                width: 100%;
-                margin: 10px 0;
-                padding: 10px;
-                border: 1px solid #ccc;
-            }
-    
-            /* Style the select elements with a custom arrow */
-            .form-control select {
-                appearance: none;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4T2NkoBAwUqifAWz6//8/4wZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRsb/wUAW+ED3r4G3fwAAAAASUVORK5CYII=') no-repeat right center;
-                padding-right: 20px;
-            }
-    
-    
-            /* Style the input elements with a different color and border radius */
-            .form-control input {
-                border-radius: 5px;
-            }
+<!DOCTYPE html>
+<html lang="en">
 
-            .mb-4 {
-                text-align: center; 
-            }
-        </style>
-    </head>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Know your Score</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Template Main CSS File -->
+  <link href="/templates/css/style.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="/templates/assets/img/R_image2.png" rel="icon">
+  <link href="/templates/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/templates/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/templates/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/templates/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/templates/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/templates/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+</head>
+
 <body>
-    <div class="login">
-   
-       <form action="{{ url_for('predict_datapoint')}}" method="post">
-        <h1>
-            <legend>Student Exam Performance Prediction</legend>
-        </h1>
-        <div class="mb-3">
-            <label class="form-label">Gender</label>
-            <select class="form-control" name="gender" placeholder="Enter you Gender" required>
-                <option class="placeholder" selected disabled value="">Select your Gender</option>
-                <option value="male">
-                    Male
-                </option>
-                <option value="female">
-                    Female
-                </option>
-            </select>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1 style="color: white;">Predict Your Performance</h1>
+      </div>
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <section class="hero-section inner-page">
+      <div class="wave">
+
+        <svg width="1920px" height="265px" viewBox="0 0 1920 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Apple-TV" transform="translate(0.000000, -402.000000)" fill="#FFFFFF">
+              <path d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,667 L1017.15166,667 L0,667 L0,439.134243 Z" id="Path"></path>
+            </g>
+          </g>
+        </svg>
+
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="row justify-content-center">
+              <div class="col-md-7 text-center hero-text">
+                <h1 data-aos="fade-up" data-aos-delay="">Tell Us about You</h1>
+                <p class="mb-5" data-aos="fade-up" data-aos-delay="100">We aim to predict your score based on your profile.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Race or Ethnicity</label>
-            <select class="form-control" name="ethnicity" placeholder="Enter you ethnicity" required>
-                <option class="placeholder" selected disabled value="">Select Ethnicity</option>
-                <option value="group A">
-                    Group A
-                </option>
-                <option value="group B">
-                    Group B
-                </option>
-                <option value="group C">
-                    Group C
-                </option>
-                <option value="group D">
-                    Group D
-                </option>
-                <option value="group E">
-                    Group E
-                </option>
-            </select>
+      </div>
+
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row mb-5 align-items-end">
+          <div class="col-md-6" data-aos="fade-up">
+
+            <h2>About You</h2>
+          </div>
+
         </div>
-        <div class="mb-3">
-            <label class="form-label">Parental Level of Education</label>
-            <select class="form-control" name="parental_level_of_education"
-                placeholder="Enter you Parent Education" required>
-                <option class="placeholder" selected disabled value="">Select Parent Education</option>
-                <option value="associate's degree">
-                    Associate's degree
-                </option>
-                <option value="bachelor's degree">
-                    Bachelor's degree
-                </option>
-                <option value="high school">
-                    High school
-                </option>
-                <option value="master's degree">
-                    Master's degree
-                </option>
-                <option value="some college">
-                    Some college
-                </option>
-                <option value="some high school">
-                    Some high school
-                </option>
-            </select>
+
+        <div class="login col-md-6 mb-5 mb-md-0">
+          <form action="{{ url_for('predict_datapoint')}}" method="post">
+           <h1>
+               <legend>Student Exam Performance Prediction</legend>
+           </h1>
+
+           
+           <div class="mt-3 mb-3">
+            <label class="form-label">Name</label>
+            <input class="form-control" type="text" name="writing_score"
+                placeholder="Enter your Name" />
+           </div>
+
+           <div class="mb-3">
+               <label class="form-label">Gender</label>
+               <select class="form-control" name="gender" placeholder="Enter you Gender" required>
+                   <option class="placeholder" selected disabled value="">Select your Gender</option>
+                   <option value="male">
+                       Male
+                   </option>
+                   <option value="female">
+                       Female
+                   </option>
+                   <option value="male">
+                       Prefer not to say
+                   </option>
+               </select>
+           </div>
+
+           <div class="mb-3">
+               <label class="form-label">Race or Ethnicity</label>
+               <select class="form-control" name="ethnicity" placeholder="Enter you ethnicity" required>
+                   <option class="placeholder" selected disabled value="">Select Ethnicity</option>
+                   <option value="group A">
+                       American
+                   </option>
+                   <option value="group B">
+                       Hispanic or Latino
+                   </option>
+                   <option value="group C">
+                       Asian
+                   </option>
+                   <option value="group D">
+                       Middle East
+                   </option>
+                   <option value="group E">
+                       Others
+                   </option>
+               </select>
+           </div>
+
+           <div class="mb-3">
+               <label class="form-label">Parental Level of Education</label>
+               <select class="form-control" name="parental_level_of_education"
+                   placeholder="Enter you Parent Education" required>
+                   <option class="placeholder" selected disabled value="">Select Parent Education</option>
+                   <option value="associate's degree">
+                       Associate's degree
+                   </option>
+                   <option value="bachelor's degree">
+                       Bachelor's degree
+                   </option>
+                   <option value="high school">
+                       High school
+                   </option>
+                   <option value="master's degree">
+                       Master's degree
+                   </option>
+                   <option value="some college">
+                       Some college
+                   </option>
+                   <option value="some high school">
+                       Some high school
+                   </option>
+               </select>
+           </div>
+
+
+           <div class="mb-3">
+               <label class="form-label">Fee Type</label>
+               <select class="form-control" name="lunch" placeholder="Enter you Lunch" required>
+                   <option class="placeholder" selected disabled value="">Select Fee Type</option>
+                   <option value="free/reduced">
+                       Free/Reduced
+                   </option>
+                   <option value="standard">
+                       Standard
+                   </option>
+               </select>
+           </div>
+
+
+           <div class="mb-3">
+               <label class="form-label">Attempted Mock Test</label>
+               <select class="form-control" name="test_preparation_course" placeholder="Enter you Course"
+                   required>
+                   <option class="placeholder" selected disabled value="">Select Mock test</option>
+                   <option value="none">
+                       None
+                   </option>
+                   <option value="completed">
+                       Completed
+                   </option>
+               </select>
+           </div>
+
+
+           <div class="mb-3">
+               <label class="form-label">Writing Score out of 100</label>
+               <input class="form-control" type="number" name="reading_score"
+                   placeholder="Enter your Reading score" min='0' max='100' />
+           </div>
+
+           <div class="mb-3">
+               <label class="form-label">Reading Score out of 100</label>
+               <input class="form-control" type="number" name="writing_score"
+                   placeholder="Enter your Reading Score" min='0' max='100' />
+           </div>
+
+           <div class="mb-4">
+               <input class="btn btn-primary" type="submit" value="Your Score could be !" required />
+           </div>
+           </form>
+       </div>
+      </div>
+      <h2>
+        The predicted English score is - {{results}}
+     </h2>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer cta-section pt-4" role="contentinfo">
+    <div class="container mt-0">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-7">
+          <h3 style="color: white;">Contact </h3>
+          <p class="social ">
+            <a  class="m-2" href="https://www.linkedin.com/in/ravikumardodda/"><span class="bi bi-linkedin"></span></a>
+            <a class="m-2" href="https://www.instagram.com/thesummertee/"><span class="bi bi-instagram"></span></a>
+            <a class="m-2" href="https://github.com/rdodda99"><span class="bi bi-github"></span></a>
+          </p>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Lunch Type</label>
-            <select class="form-control" name="lunch" placeholder="Enter you Lunch" required>
-                <option class="placeholder" selected disabled value="">Select Lunch Type</option>
-                <option value="free/reduced">
-                    Free/Reduced
-                </option>
-                <option value="standard">
-                    Standard
-                </option>
-            </select>
+      </div>
+
+
+      <div class="row justify-content-center text-center">
+        <div class="col-md-7">
+          <p class="copyright">&copy; All Rights Reserved</p>
+          <div class="credits">
+            Designed by Ravi
+          </div>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Test preparation Course</label>
-            <select class="form-control" name="test_preparation_course" placeholder="Enter you Course"
-                required>
-                <option class="placeholder" selected disabled value="">Select Test_course</option>
-                <option value="none">
-                    None
-                </option>
-                <option value="completed">
-                    Completed
-                </option>
-            </select>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Writing Score out of 100</label>
-            <input class="form-control" type="number" name="reading_score"
-                placeholder="Enter your Reading score" min='0' max='100' />
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Reading Score out of 100</label>
-            <input class="form-control" type="number" name="writing_score"
-                placeholder="Enter your Reading Score" min='0' max='100' />
-        </div>
-        <div class="mb-4">
-            <input class="btn btn-primary" type="submit" value="Predict your Maths Score" required />
-        </div>
-    </form>
-    <h2>
-       The predicted math score is - {{results}}
-    </h2>
-   <body>
+      </div>
+
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/templates/assets/vendor/aos/aos.js"></script>
+  <script src="/templates/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/templates/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/templates/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/templates/assets/js/main.js"></script>
+
+</body>
+
 </html>
