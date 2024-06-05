@@ -1019,3 +1019,38 @@ section {
 .social a i {
   line-height: 0;
 }
+
+/* .login {
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Style the select elements with a custom arrow */
+/* .form-control select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4T2NkoBAwUqifAWz6//8/4wZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRkZGZmYGBgaGZmZmZgZGRsb/wUAW+ED3r4G3fwAAAAASUVORK5CYII=') no-repeat right center;
+  padding-right: 20px;
+}
+
+
+/* Style the input elements with a different color and border radius */
+/* .form-control input {
+  border-radius: 5px;
+}
+
+.mb-4 {
+  text-align: center; 
+} */ 

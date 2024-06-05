@@ -17,10 +17,10 @@ def get_requirements(file_path:str)->List[str]:
 
 
 setup(
-    name='mlproject',
+    name='scorepredictor',
     version='0.0.1',
-    author='Abhay',
-    author_email='abhayabhi987@gmail.com',
+    author='Ravi Kumar',
+    author_email='ravi.dodda464@gmail.com',
     packages=find_packages(),
     install_requires = get_requirements('requirements.txt')
 )
